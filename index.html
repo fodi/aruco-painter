@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ArUco Painter by Fodi</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="icon" type="image/png" href="favicon.png">
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+    <body>
+        <header>
+            <h1>ArUco Painter</h1>
+            <button class="button" onclick="setResolution()">Set resolution</button>
+            <label for="toggle-grid" class="button">Toggle grid</label>
+        </header>
+        <input type="checkbox" id="toggle-grid" style="display:none" checked>
+        <main>
+            <div id="grid"></div>
+            <div id="grid-info" class="mt-small"></div>
+        </main>
+        <div class="mt-big">
+            &copy; <a href="https://fodi.be" target="_blank">Fodi</a> of
+            <a href="https://lasermagnet.com" target="_blank">Lasermagnet Games</a>
+        </div>
+        <div class="mt-small">Code is on <a href="https://github.com/fodi/aruco-painter" target="_blank">GitHub</a>.</div>
+        <script src="app.js"></script>
+    </body>
+</html>

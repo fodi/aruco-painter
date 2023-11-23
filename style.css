@@ -1,0 +1,66 @@
+:root {
+    --grid-resolution: 0;
+    --cell-max-size: 60px;
+}
+
+html, body {
+    height: 100%;
+    font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+    line-height: 1.3rem;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+table, tr, td, th {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    border-collapse: collapse;
+}
+
+td {
+    width: min(calc(98vw / var(--grid-resolution)), var(--cell-max-size));
+    height: min(calc(98vw / var(--grid-resolution)), var(--cell-max-size));
+    box-sizing: border-box;
+    touch-action: none;
+}
+
+td.dark {
+    background: black;
+    /*border-radius: 100%;*/
+}
+
+td.light {
+    background: white;
+}
+
+input[type="checkbox"]#toggle-grid:checked + main table td {
+    border: 2px solid #ccc;
+}
+
+.button {
+    display: inline-block;
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+    background-color: #ccc;
+    border: 2px solid #bbb;
+    border-radius: 2px;
+    font-size: 1rem;
+}
+
+.button:hover {
+    background-color: #ddd;
+}
+
+.mt-small {
+    margin-top: 0.5rem
+}
+
+.mt-big {
+    margin-top: 2rem
+}
